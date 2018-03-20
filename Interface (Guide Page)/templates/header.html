@@ -1,0 +1,37 @@
+<!DOCTYPE html> {% assets "js_all" %}
+<script type="text/javascript" src="{{ ASSET_URL }}"></script> {% endassets %} {% assets "css_all" %}
+<link rel=stylesheet type="text/css" href="{{ ASSET_URL }}"> {% endassets %}
+<style>
+    header .branding {
+        display: flex;
+        align-items: center;
+    }
+</style>
+
+<head>
+    <title>
+        #VMWonAWS-Bot
+    </title>
+</head>
+<html lang="en">
+
+<header class="header-6">
+    <div class="branding">
+        <clr-icon shape="vm"></clr-icon>
+        <span class="title"> <b>VMware Cloud on AWS - Lex Bot</b></span>
+    </div>
+    <div class="header-actions branding">
+            <a href="https://github.com/vtagion/vmclex" class="nav-text">
+                <clr-icon shape="code" class="is-solid is-inverse" style="width: 48px; height: 48px;"></clr-icon>
+    
+                <span class="title">
+                    <b>GitHub</b>
+                </span>
+            </a>
+        </div>
+</header>
+
+<body>
+{% block body %}{% endblock %}
+</body>
+</html>
